@@ -187,3 +187,8 @@ submitQuiz.addEventListener("click", () => {
   }, 1500);
   window.scrollTo(0, 0);
 });
+
+
+function blogBtn(){
+  window.location.href = "http://127.0.0.1:5500/blog.html";
+}
