@@ -37,7 +37,7 @@
 
       <section class=" shadow-sm border-2">
 
-        <div style="border-style: inset;" class="m-10 border-2 p-5 ">
+        <div style="border-style: outset;" class="m-10 border-2 p-5 ">
           <h1 class="text-lg text-zinc-700 font-bold uppercase">Difference Between : Map vs Foreach vs Filter vs Find</h1>
         <p class="text-green-800 font-semibold"><br>
           Map() : <br> 
@@ -53,39 +53,34 @@
         </p>
         </div>
 
-        <div style="border-style: inset;" class="m-10 border-2 p-5 ">
-          <h1 class="text-lg text-zinc-700 font-bold uppercase">Difference Between : Map vs Foreach vs Filter vs Find</h1>
+        <div style="border-style: outset;" class="m-10 border-2 p-5 ">
+          <h1 class="text-lg text-zinc-700 font-bold uppercase">Difference Between : Local Storage vs Session Storage And Cookies</h1>
+          <p class="text-green-800 font-semibold">
+            Local Storage : <br> 
+          As it is not session-based, it must be deleted via javascript or manually<br>The client  can only read local storage<br>There is no transfer of data to the server<br>The storage capacity of local storage is 5MB/10MB<br>
+          Session Storage :<br>
+          Data is stored only for the duration of a session, i.e., until the browser (or tab) is closed<br>The client can only read local storage<br>There is no transfer of data to the server<br>The storage capacity of session storage is 5MB<br>
+          Cookies: <br>
+          Cookies expire based on the setting and working per tab and window <br>Both clients and servers can read and write the cookies<br>Data transfer to the server is exist <br>The storage capacity of Cookies is 4KB
+          </p>
+
+        </div>
+
+      
+
+        <div style="border-style: outset;" class="m-10 border-2 p-5 ">
+          <h1 class="text-lg text-zinc-700 font-bold uppercase">Event loop in JavaScript  : How Does It works</h1>
         <p class="text-green-800 font-semibold"><br>
-          Map() : <br> 
-          The map() method returns a new array,The map() method is used to transform the elements of an array, The map() method can be used with other array methods<br>
-          ForEach() :<br>
-          forEach() method does not return a new array, forEach() method is used to loop through the elements of an array,forEach() method cannot be used with other array methods.         <br>
-          Filter(): <br>
-          filter() returns an array containing the element that satisfies the condition,In filter(), whole array is iterated despite the fact that the element being searched for is present at the beginning.
-          <br>Find():<br>
-          find() returns the element itself that satisfies the condition.find(), as soon as the element that satisfies the condition is found, it gets returned.
+          Event loop in JavaScript is such a mechanism which handles this. This means it manages the lifecycle of a callback function from the callback queue to the call stack.Whenever you read about the event loop in javascript next, think of it as a mechanism more than anything else.<br>
+          
+          But How does it work?<br>
+          The Event Loop has one simple job — to monitor the Call Stack and the Callback Queue. If the Call Stack is empty, the Event Loop will take the first event from the queue and will push it to the Call Stack, which effectively runs it.Such an iteration is called a tick in the Event Loop. technically it’s within the scope of the JS engine’s responsibilities, which is no longer playing just a hosting environment role. One main reason for this change is the introduction of Promises in ES6 because the latter require access to a direct, fine-grained control over scheduling operations on the event loop queue (we’ll discuss them in a greater detail later).
 
 
         </p>
         </div>
 
-        <div style="border-style: inset;" class="m-10 border-2 p-5 ">
-          <h1 class="text-lg text-zinc-700 font-bold uppercase">Difference Between : Map vs Foreach vs Filter vs Find</h1>
-        <p class="text-green-800 font-semibold"><br>
-          Map() : <br> 
-          The map() method returns a new array,The map() method is used to transform the elements of an array, The map() method can be used with other array methods<br>
-          ForEach() :<br>
-          forEach() method does not return a new array, forEach() method is used to loop through the elements of an array,forEach() method cannot be used with other array methods.         <br>
-          Filter(): <br>
-          filter() returns an array containing the element that satisfies the condition,In filter(), whole array is iterated despite the fact that the element being searched for is present at the beginning.
-          <br>Find():<br>
-          find() returns the element itself that satisfies the condition.find(), as soon as the element that satisfies the condition is found, it gets returned.
-
-
-        </p>
-        </div>
-
-        <div style="border-style: inset;" class="m-10 border-2 p-5 ">
+        <div style="border-style: outset;" class="m-10 border-2 p-5 ">
           <h1 class="text-lg text-zinc-700 font-bold uppercase">Difference Between : Map vs Foreach vs Filter vs Find</h1>
         <p class="text-green-800 font-semibold"><br>
           Map() : <br> 
@@ -102,5 +97,12 @@
         </div>
 
       </section>
+
+
+      <!-- Footer section start -->
+    <footer class="py-10 text-center text-sm">
+      Copyright © 2023 Quiz Hero All Rights Reserved.
+    </footer>
+    <!-- Footer section end -->
 </body>
 </html>
