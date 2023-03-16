@@ -25,8 +25,8 @@
     <!-- Header Part  -->
     <header class="h-16 flex items-center shadow-lg">
         <nav class="flex justify-between items-center w-9/12 mx-auto">
-          <div class="text-zinc-800 font-bold uppercase">
-            <h1 class="text-lg">Quiz <span class="text-green-700">HERO</span>: &nbsp; <span class="text-base text-green-400">blogs</span> </h1>
+          <div class="text-zinc-800 font-bold uppercase m-5">
+            <h1 class="text-xl">Quiz <span class="text-green-700">HERO</span>: &nbsp; <span class="text-lg text-green-400">blogs</span> </h1>
             <p class="text-[10px] font-normal capitalize -mt-1">
              Get Ready to read some important blogs!
             </p>
@@ -66,32 +66,30 @@
 
         </div>
 
-      
-
         <div style="border-style: outset;" class="m-10 border-2 p-5 ">
           <h1 class="text-lg text-zinc-700 font-bold uppercase">Event loop in JavaScript  : How Does It works</h1>
         <p class="text-green-800 font-semibold"><br>
           Event loop in JavaScript is such a mechanism which handles this. This means it manages the lifecycle of a callback function from the callback queue to the call stack.Whenever you read about the event loop in javascript next, think of it as a mechanism more than anything else.<br>
           
           But How does it work?<br>
-          The Event Loop has one simple job — to monitor the Call Stack and the Callback Queue. If the Call Stack is empty, the Event Loop will take the first event from the queue and will push it to the Call Stack, which effectively runs it.Such an iteration is called a tick in the Event Loop. technically it’s within the scope of the JS engine’s responsibilities, which is no longer playing just a hosting environment role. One main reason for this change is the introduction of Promises in ES6 because the latter require access to a direct, fine-grained control over scheduling operations on the event loop queue (we’ll discuss them in a greater detail later).
+          The Event Loop has one simple job — to monitor the Call Stack and the Callback Queue. If the Call Stack is empty, the Event Loop will take the first event from the queue and will push it to the Call Stack, which effectively runs it.Such an iteration is called a tick in the Event Loop. technically its within the scope of the JS engines responsibilities, which is no longer playing just a hosting environment role. One main reason for this change is the introduction of Promises in ES6 because the latter require access to a direct, fine-grained control over scheduling operations on the event loop queue (well discuss them in a greater detail later).
 
 
         </p>
         </div>
 
         <div style="border-style: outset;" class="m-10 border-2 p-5 ">
-          <h1 class="text-lg text-zinc-700 font-bold uppercase">Difference Between : Map vs Foreach vs Filter vs Find</h1>
+          <h1 class="text-lg text-zinc-700 font-bold uppercase">quizTimer() And chooseQuiz() Arrow function : </h1>
         <p class="text-green-800 font-semibold"><br>
-          Map() : <br> 
-          The map() method returns a new array,The map() method is used to transform the elements of an array, The map() method can be used with other array methods<br>
-          ForEach() :<br>
-          forEach() method does not return a new array, forEach() method is used to loop through the elements of an array,forEach() method cannot be used with other array methods.         <br>
-          Filter(): <br>
-          filter() returns an array containing the element that satisfies the condition,In filter(), whole array is iterated despite the fact that the element being searched for is present at the beginning.
-          <br>Find():<br>
-          find() returns the element itself that satisfies the condition.find(), as soon as the element that satisfies the condition is found, it gets returned.
-
+          quizTimer(): <br> 
+          Start Time conuting When click on startQuiz button and load Quiz. And When click on submitQuiz button then stop time counting and save those time and reset.
+How work quizTimer Function :<br>
+clearInterval() = when dismiss value is true clean time and return.
+setInterval() = always set miniute and Second.
+Here convert miniute sec to min .and convert min(digit) to sting. Then set time in countHtml Tag.
+          <br>chooseQuiz():<br>
+          When click Answers option collect question and option index and sent it chooseQuiz()  function. find this option in answers Array.if it Exist then store in isExist. 
+          If isExist.id,  quiz.id are same then splice answers Array.Otherwize push givenAns in answers Array.Then set answers Array to displayAnswers() function.
 
         </p>
         </div>
