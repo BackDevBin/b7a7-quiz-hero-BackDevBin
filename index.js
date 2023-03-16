@@ -188,6 +188,7 @@ submitQuiz.addEventListener("click", () => {
   window.scrollTo(0, 0);
 });
 
+// Blog Button: onclick function
 
 function blogBtn(){
   window.location.href = "http://127.0.0.1:5500/blog.html";
